@@ -1,0 +1,6 @@
+permalink: pretty
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
