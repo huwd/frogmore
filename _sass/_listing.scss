@@ -1,0 +1,56 @@
+.listing ul,
+.listing ul li {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.75rem;
+}
+
+.listing .title {
+  text-decoration: underline;
+}
+
+.listing time {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  min-width: 6rem;
+}
+
+@media screen and (min-width: 40rem) {
+  .listing time {
+    margin-left: auto;
+  }
+
+  .listing .rating {
+    width: 4.5rem;
+    margin-left: 0.4rem;
+  }
+
+  .listing ul li {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .listing .title,
+  .listing .authors {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+  }
+
+  .listing .title {
+    text-decoration: unset;
+    min-width: 13rem;
+    max-width: 15rem;
+    width: 100%;
+    margin-right: auto;
+  }
+
+  .listing {
+    min-width: 10rem;
+  }
+
+  .authors {
+    width: 10rem;
+  }
+}
