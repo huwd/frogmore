@@ -23,30 +23,9 @@ a {
 	text-decoration: underline;
 }
 
-pre {
-	margin: 0.5rem 0;
-	padding: 0.5rem;
-}
-
-.post p {
-	margin: 0.5rem 0;
-}
-
-.post h1,
-.post h2,
-.post h3,
-.post h4 {
-	margin: 1rem 0;
-}
-
-.post h2:first-child,
-.project h2:first-child,
-.photo h2:first-child {
-	margin-top: 0;
-}
-
 .meta {
-	margin: 2rem 0;
+	margin: 1rem 0;
+	font-style: italic;
 }
 
 code,
@@ -63,6 +42,7 @@ pre code {
 }
 
 pre {
+	margin: 0.5rem 0;
 	padding: 1rem;
 	overflow-x: auto;
 }
@@ -94,11 +74,11 @@ header ul,
 .listing,
 .post {
 	max-width: 43rem;
+	display: flex;
+	flex-direction: column;
 }
 
 header ul {
-	display: flex;
-	flex-direction: column;
 	margin: 0 auto;
 	list-style: none;
 	padding: 0 2rem 2rem 2rem;
@@ -138,6 +118,10 @@ h5 {
 	font-weight: 600;
 }
 
+h1 {
+	font-size: 2rem;
+}
+
 strong,
 b {
 	font-weight: bold;
@@ -159,6 +143,10 @@ article {
 section,
 article h1:first-child {
 	margin-top: 0;
+}
+
+p {
+	margin: 0.5rem 0;
 }
 
 @media screen and (min-width: 64rem) {
